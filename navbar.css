@@ -1,0 +1,59 @@
+.nav-button-container {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 20px;
+}
+
+.nav-circle {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: red;
+    border-radius: 50%;
+    transition: .5s all ease;
+}
+
+.nav-button,
+.nav-button2,
+.nav-button3 {
+    width: 20px;
+    height: 2px;
+    border-radius: 5px;
+    background: white;
+    position: absolute;
+    transition: all .5s ease;
+}
+
+.nav-button2 {
+    content: "";
+    background: white;
+    margin-top: 11px;
+}
+
+.nav-button3 {
+    position: absolute;
+    content: "";
+    background: white;
+    margin-bottom: 11px;
+}
+
+.nav-sub {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navham {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
