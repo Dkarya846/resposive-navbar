@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NavBar</title>
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
         color: whitesmoke;
     }
-    li{
+    
+    li {
         list-style: none;
     }
-    #social-icons{
+    
+    #social-icons {
         display: flex;
         justify-content: space-between;
         padding: 0 30px;
         height: 40px;
         align-items: center;
     }
-
-    #social-handles a{
+    
+    #social-handles a {
         margin: 0 10px;
     }
-
-    #social-handles a i:hover{
+    
+    #social-handles a i:hover {
         color: #9228A2;
         background: whitesmoke;
         font-size: 25px;
         padding: 10px;
     }
-
-
-    nav{
-        display:flex;
+    
+    nav {
+        display: flex;
         position: sticky;
         top: 0;
-        justify-content:space-between;
+        justify-content: space-between;
         height: 80px;
         vertical-align: middle;
         align-items: center;
         background: #0A192F;
         color: whitesmoke;
-        box-shadow: 2px 2px 2px rgba(255,255,255,0.4);
+        box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4);
         padding: 0 30px;
     }
-
-    nav #logo{
+    
+    nav #logo {
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
-    nav #logo img{
+    nav #logo img {
         padding: 10px 20px;
         width: 150px;
         height: 60px;
@@ -63,14 +66,14 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-transform: uppercase;
     }
-
-    nav>ul>li{
-        float:left;
+    
+    nav>ul>li {
+        float: left;
         list-style: none;
         transition: 1s all ease;
     }
-
-    .navStyle{
+    
+    .navStyle {
         display: inline-block;
         padding: 10px 20px;
         transform: skew(0deg);
@@ -84,8 +87,8 @@
         /* border-bottom: red 2px solid; */
         font-weight: bold;
     }
-
-    .navStyle::before{
+    
+    .navStyle::before {
         content: "";
         position: absolute;
         left: 0;
@@ -94,10 +97,10 @@
         transition: 0.3s all ease;
         bottom: 0;
         border-radius: 20px;
-        transform: scale(1.2);  
+        transform: scale(1.2);
     }
-
-    .navStyle:hover::before{
+    
+    .navStyle:hover::before {
         width: 100%;
         background: transparent;
         height: 31px;
@@ -108,69 +111,66 @@
         padding: 0;
         transform: scale(1);
     }
-
-    .sub-list>ul{
+    
+    .sub-list>ul {
         transform: translate(10%);
         background: #173055;
         padding: 20px 5px;
         visibility: hidden;
         width: max-content;
-
         transition: all 0.1s ease-out;
         position: absolute;
-
         border-bottom: 2px solid red;
         border-radius: 0 0px 20px 20px;
     }
-
-    .sub-list:hover ul{
+    
+    .sub-list:hover ul {
         visibility: visible;
         transform: translate(0);
     }
-    .sub-list>ul li{
+    
+    .sub-list>ul li {
         margin-top: 20px;
         width: 100%;
     }
-
-
-    .sub-list>ul li a{
+    
+    .sub-list>ul li a {
         display: block;
         text-align: center;
     }
-
-    .navStyle{
+    
+    .navStyle {
         text-decoration: none;
         color: whitesmoke;
         text-transform: uppercase;
     }
-
     /* #hoverStyle{
         position: absolute;
         padding: 0px;
         opacity: 0;
         background: purple;
     } */
-
     /* nav ul a:hover{
         opacity: 1;
         padding: 10px 20px;
 
     } */
-    body{
+    
+    body {
         background: #0A192F;
     }
-
-    .active
-    {
+    
+    .active {
         border-top: 2px red solid;
         border-radius: 10px;
         border-bottom: 2px red solid;
     }
 </style>
+
 <body>
     <div id="social-icons">
         <div id="phone"> <i class="fa fa-phone"></i> +918744822540</div>
-        <div id="social-handles"> 
+        <div id="social-handles">
             <a href="https://www.instagram.com/dkarya_at_insta"><i class="fa fa-instagram"></i></a>
             <a href="https://www.facebook.com/dkarya846"><i class="fa fa-facebook"></i></a>
             <a href="https://www.linkedin.com/in/dkarya846"><i class="fa fa-linkedin"></i></a>
@@ -179,32 +179,45 @@
         </div>
     </div>
     <nav>
-        <div id="logo">
-            <img src="./main-logo.png" alt="Graphics4u">
+        <div class="nav-button-container">
+            <div class="nav-sub" id="nav-button">
+                <div class="nav-circle"></div>
+                <div class="navham" id="navhambutton">
+                    <div class="nav-button" id="navButton1"></div>
+                    <div class="nav-button2" id="navButton2"></div>
+                    <div class=" nav-button3" id="navButton3"></div>
+                </div>
+            </div>
+        </div>
+        <div id=" logo ">
+            <img src="./main-logo.png " alt="Graphics4u ">
         </div>
         <ul>
-            <li><a href="#" class="navStyle active" >Home</a></li>
-            <li class="sub-list"><a href="#" class="navStyle" >Services</a>
+            <li><a href="# " class="navStyle active ">Home</a></li>
+            <li class="sub-list "><a href="# " class="navStyle ">Services</a>
                 <ul>
-                    <li><a href="Project 2"  class="navStyle active" >Search Engine Optimization</a></li>
-                    <li><a href="Project 2"  class="navStyle" >Social Media Optimization</a></li>
-                    <li><a href="Project 2"  class="navStyle" >Mobile App Development</a></li>
-                    <li><a href="Project 2"  class="navStyle" >Web Developement</a></li>
-                    <li><a href="Project 1"  class="navStyle" >Graphic Designing</a></li>
-                    <li><a href="Project 2"  class="navStyle" >Digital Marketing</a></li>
-                    
+                    <li><a href="Project 2 " class="navStyle active ">Search Engine Optimization</a></li>
+                    <li><a href="Project 2 " class="navStyle ">Social Media Optimization</a></li>
+                    <li><a href="Project 2 " class="navStyle ">Mobile App Development</a></li>
+                    <li><a href="Project 2 " class="navStyle ">Web Developement</a></li>
+                    <li><a href="Project 1 " class="navStyle ">Graphic Designing</a></li>
+                    <li><a href="Project 2 " class="navStyle ">Digital Marketing</a></li>
+
                 </ul>
             </li>
-            <li><a href="#" class="navStyle" >About Us</a></li>
-            <li class="sub-list"><a href="#" class="navStyle" >Our Projects</a>
+            <li><a href="# " class="navStyle ">About Us</a></li>
+            <li class="sub-list "><a href="# " class="navStyle ">Our Projects</a>
                 <ul>
-                    <li><a href="Project 1"  class="navStyle" > Project1</a></li>
-                    <li><a href="Project 2"  class="navStyle" >Project 2</a></li>
+                    <li><a href="Project 1 " class="navStyle "> Project1</a></li>
+                    <li><a href="Project 2 " class="navStyle ">Project 2</a></li>
                 </ul>
             </li>
-            <li><a href="#" class="navStyle" >Our Team</a></li>
+            <li><a href="# " class="navStyle ">Our Team</a></li>
         </ul>
     </nav>
-    <section style="height: 100vw;">s</section>
+    <section style="height: 100vw; ">s</section>
+    <script src="navbar.js "></script>
+
 </body>
+
 </html>
